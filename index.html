@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Simulador de Caída Libre</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+
+        <main>
+
+            <div class="contenedorFormulario">
+
+                <h2>Simulador de Caída Libre</h2>
+                <h3>Introduzca sus datos</h3>
+                <div id="formulario">
+                    <label>Masa (kg): <input type="number" id="masa" value="2"></label>
+                    <label>Altura (m): <input type="number" id="altura" value="10"></label>
+                    <br>
+                    <button onclick="iniciar()">Iniciar</button>
+                </div>
+                <div class="energias">
+                    <div><b>Velocidad final:</b> <span id="velocidadFinal">0</span> m/s</div>
+                    <div><b>Tiempo de caida estimado:</b> <span id="tiempo">0</span> s</div>
+                    <div><b>Energía potencial:</b> <span id="energiaP">0</span> J</div>
+                    <div><b>Energía cinética:</b> <span id="energiaK">0</span> J</div>
+                </div>
+
+            </div>
+            <div class="contenedorCanvas">
+                <div class="valor azul" id="barraEp" ><div id="azul">Ep</div></div>
+                <div class="valor naranja" id="barraEk"><div id="naranja">Ek</div></div>
+                <div class="final">
+                    <div class="barra potencial" id="si1"></div>
+                    <div class="barra cinetica" id="si2"></div>
+                </div>
+            
+                <canvas id="canvas" width="300" height="400"></canvas>
+
+            </div>
+
+
+        </main>
+
+        <script src="app.js"></script>
+
+    </body>
+</html>

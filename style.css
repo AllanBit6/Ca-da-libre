@@ -1,0 +1,95 @@
+    body { 
+        font-family: sans-serif; 
+        text-align: center; 
+        margin: 20px; 
+        background-color: rgb(43, 43, 43);
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+
+    main{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+
+    }
+    h2{
+        font-size: 50px;
+
+
+    }
+    input { 
+        margin: 5px; 
+        padding: 5px; 
+        width: 80px; 
+    }
+    canvas { 
+        border: 1px solid black; 
+        background: #eef; 
+        margin-top: 20px; 
+    }
+    .energias { 
+        margin-top: 15px; 
+    }
+    .barra { 
+        height: 20px; 
+        margin: 5px; 
+        background: lightgray; 
+        width: 300px; 
+        position: relative; 
+        margin: 10px auto; 
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .valor { 
+        z-index: 5; 
+        left: 5px; 
+        color: rgb(0, 0, 0); 
+        font-weight: bold; 
+        font-size: 30px;
+    }
+    .potencial { 
+        background-color: #1e90ff; 
+    }
+    .cinetica { 
+        background-color: #f39c12; 
+    }
+    .contenedorCanvas{
+        margin: 20px;
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+    }
+    .formulario button{
+        border: 1px black solid;
+        background-color: white;
+        border-radius: 5px;
+        padding: 50px;
+    }
+
+    .naranja{
+        color: #f39c12; 
+    }
+    .azul{
+        color: #1e90ff; 
+    }
+    .final{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    #formulario{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+@media only screen and (max-width:900px){
+    main{
+        flex-direction: column;
+    }
+}
