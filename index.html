@@ -13,13 +13,15 @@
 
             <div class="contenedorFormulario">
 
-                <h2>Simulador de Caída Libre</h2>
+                <h2>Simulador de Caída Óptima</h2>
                 <h3>Introduzca sus datos</h3>
                 <div id="formulario">
                     <label>Masa (kg): <input type="number" id="masa" value="2"></label>
                     <label>Altura (m): <input type="number" id="altura" value="10"></label>
+                    <input type="button" value="Iniciar" id="empezar">
                     <br>
-                    <button onclick="iniciar()">Iniciar</button>
+
+
                 </div>
                 <div class="energias">
                     <div><b>Velocidad final:</b> <span id="velocidadFinal">0</span> m/s</div>
@@ -27,6 +29,29 @@
                     <div><b>Energía potencial:</b> <span id="energiaP">0</span> J</div>
                     <div><b>Energía cinética:</b> <span id="energiaK">0</span> J</div>
                 </div>
+
+                <table>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Material</th>
+                        <th>Absorción de energía</th>
+                    </tr>
+                    <tr>
+                        <td>Frágiles</td>
+                        <td>Celulares, cristalería</td>
+                        <td>10-50J</td>
+                    </tr>
+                    <tr>
+                        <td>Resistentes</td>
+                        <td>Ropa, libros</td>
+                        <td>100-200J</td>
+                    </tr>
+                    <tr>
+                        <td>Embalaje seguro</td>
+                        <td>Foam, espuma, burbujas</td>
+                        <td>300-400J</td>
+                    </tr>
+                </table>
 
             </div>
             <div class="contenedorCanvas">

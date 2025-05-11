@@ -70,3 +70,7 @@
     }
 
     dibujar(0); // posición inicial
+
+
+let empezar = document.getElementById('empezar')
+empezar.addEventListener('click', iniciar)
