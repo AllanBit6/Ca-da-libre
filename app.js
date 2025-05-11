@@ -62,7 +62,6 @@
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       const h = canvas.height - 50;
       const posY = proporcion * h;
-
       ctx.fillStyle = "red";
       ctx.beginPath();
       ctx.arc(canvas.width / 2, 30 + posY, 20, 0, Math.PI * 2);
